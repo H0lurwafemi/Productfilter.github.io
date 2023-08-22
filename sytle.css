@@ -1,0 +1,102 @@
+/* Import a font from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/* Reset default margin, padding, box-sizing, and set a default font family */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Styles for the body of the page */
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(240, 239, 243); /* Background color */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for a container element */
+.container {
+    width: 375px; /* Width of the container */
+    height: 520px; /* Height of the container */
+    background: white; /* Background color of the container */
+    border-radius: 15px; /* Rounded corners of the container */
+    box-shadow: 4px 4px 30px rgb(0, 0, 0.06); /* Box shadow for a subtle 3D effect */
+    padding: 20px; /* Padding inside the container */
+    overflow-y: scroll; /* Enable vertical scrolling if content overflows */
+}
+
+/* Hide the scrollbar in the container */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Styles for a form inside the container */
+.container form {
+    width: 100%;
+    border: 1px solid rgb(82, 74, 235); /* Border around the form */
+    border-radius: 4px; /* Rounded corners of the form */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Styles for input elements inside the form */
+.container form input {
+    border: none; /* Remove input border */
+    outline: none; /* Remove input outline */
+    box-shadow: none; /* Remove input box shadow */
+    width: 100%; /* Full width input */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    padding: 8px 10px; /* Padding inside the input */
+}
+
+/* Styles for an icon inside the form */
+.container form i {
+    padding-left: 10px; /* Left padding for the icon */
+}
+
+/* Styles for product items */
+.product {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px; /* Padding below each product item */
+}
+
+/* Styles for product images */
+.product img {
+    width: 70px; /* Width of product images */
+    height: 70px; /* Height of product images */
+    object-fit: cover; /* Make sure images cover their containers */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+/* Styles for the list of products */
+.product-list {
+    padding: 20px 0; /* Padding around the product list */
+}
+
+/* Styles for product details */
+.product .p-details {
+    padding-left: 15px; /* Left padding for product details */
+}
+
+/* Styles for product names */
+.product .p-details h2 {
+    font-size: 20px; /* Font size for product names */
+    color: black; /* Text color */
+}
+
+/* Styles for product prices */
+.product .p-details h3 {
+    font-size: 18px; /* Font size for product prices */
+    color: black; /* Text color */
+}
